@@ -1,0 +1,6 @@
+{
+  "name": "LIVA — Luxury Pakistani Formal & Bridal Couture",
+  "description": "Crafted for the moments that matter. Discover LIVA's signature Pakistani formal wear, luxury formals, pret, and bespoke bridal couture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

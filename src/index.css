@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "./shaders/threeui.css";
+
+@layer base {
+  :root {
+    --color-ivory: #F7F3EC;
+    --color-ink: #0B0B0B;
+    --color-gold: #B8975A;
+    --color-burgundy: #5A1424;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: #F7F3EC;
+    color: #0B0B0B;
+    scroll-behavior: auto;
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+
+  :focus-visible {
+    outline: 2px solid #B8975A;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8975A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A1424;
+}
